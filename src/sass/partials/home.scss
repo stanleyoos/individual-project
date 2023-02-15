@@ -1,0 +1,37 @@
+.homepage-wrapper {
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+section#home {
+  background: url('../../images/background.png') no-repeat center center/cover;
+  color: $color-cream;
+}
+
+.main-title {
+  height: 200px;
+  width: 700px;
+
+  margin-top: 24%;
+  font-weight: bold;
+  font-size: 50px;
+  //background: rgb(171, 43, 43);
+  border-bottom: 3px solid $color-cream;
+  p {
+    letter-spacing: 4px;
+  }
+  p#first {
+    margin-right: 20%;
+  }
+
+  p#second {
+    margin-left: 20%;
+  }
+}
+
+.discover {
+  margin-bottom: 30px;
+}

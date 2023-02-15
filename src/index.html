@@ -4,13 +4,56 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,900;1,300;1,600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
     <title>Individual project 1</title>
   </head>
   <body>
-    <h2>Individual project</h2>
-    <p>Coffee Shop</p>
+    <header class="header">
+      <div class="container">
+        <div class="header-wrapper">
+          <div class="logo">
+            <h1>EL TIGRE</h1>
+            <p>VENEZUELA COFFEE BEANS</p>
+          </div>
 
-    <script src="js/script.js"></script>
+          <div class="main-nav">
+            <a href="#home">HOME</a>
+            <a href="#products">PRODUCTS</a>
+            <a href="#contact">CONTACT</a>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div id="pages">
+      <section id="home">
+        <div class="homepage-wrapper container">
+          <div class="main-title">
+            <p id="first">HOME OF</p>
+            <p id="second">ORIGINAL TASTES</p>
+          </div>
+          <div class="discover">
+            <h4>DISCOVER</h4>
+            <p>icon</p>
+          </div>
+        </div>
+      </section>
+      <section id="products">
+        <div class="products-wrapper container">Products</div>
+      </section>
+      <section id="contact">
+        <div class="about-wrapper container">Contact</div>
+      </section>
+    </div>
+
+    <script src="js/app.js" type="module"></script>
   </body>
 </html>

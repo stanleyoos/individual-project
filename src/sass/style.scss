@@ -1,4 +1,6 @@
-body {
-  background: steelblue;
-  font-family: sans-serif;
-}
+@import './partials/settings.scss';
+@import './partials/global.scss';
+@import './partials/header.scss';
+@import './partials/about.scss';
+@import './partials/products.scss';
+@import './partials/home.scss';
