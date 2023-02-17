@@ -1,9 +1,10 @@
 export const select = {
   templateOf: {
-    product: '',
+    product: '#template-product',
   },
   containerOf: {
     pages: '#pages',
+    products: '#product-list',
   },
   nav: {
     links: '.main-nav a',
@@ -20,9 +21,17 @@ export const classNames = {
 }
 
 export const settings = {
-  db: {},
+  db: {
+    url:
+      '//' +
+      window.location.hostname +
+      (window.location.hostname == 'localhost' ? ':3131' : ''),
+    products: 'products',
+  },
 }
 
 export const templates = {
-  product: '',
+  product: Handlebars.compile(
+    document.querySelector(select.templateOf.product).innerHTML
+  ),
 }

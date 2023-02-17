@@ -1,4 +1,5 @@
-import { classNames, select } from './settings.js'
+import Product from './components/Product.js'
+import { classNames, select, settings } from './settings.js'
 
 const app = {
   initPages: function () {
@@ -43,8 +44,30 @@ const app = {
     }
   },
 
+  initData: function () {
+    this.products = {}
+
+    const url = settings.db.url + '/' + settings.db.products
+
+    fetch(url)
+      .then((res) => res.json())
+      .then((data) => {
+        this.products = data
+
+        this.initProducts()
+      })
+  },
+
+  initProducts: function () {
+    for (let productData in this.products) {
+      new Product(this.products[productData].id, this.products[productData])
+    }
+  },
+
   init: function () {
     this.initPages()
+    this.initProducts()
+    this.initData()
   },
 }
 

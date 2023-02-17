@@ -42,18 +42,25 @@
           </div>
           <div class="discover">
             <h4>DISCOVER</h4>
-            <p>icon</p>
+            <i class="icon-down"></i>
           </div>
         </div>
       </section>
       <section id="products">
-        <div class="products-wrapper container">Products</div>
+        <div id="product-list" class="products-wrapper container">PRODUCTS</div>
       </section>
       <section id="contact">
         <div class="about-wrapper container">Contact</div>
       </section>
     </div>
-
+    <script id="template-product" type="text/x-handlebars-template">
+      <div>
+        <h2>{{title}}</h2>
+        <p>{{description}}</p>
+        <img src={{image}} alt='image' />
+      </div>
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="js/app.js" type="module"></script>
   </body>
 </html>

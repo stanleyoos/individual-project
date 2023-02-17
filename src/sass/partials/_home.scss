@@ -12,26 +12,47 @@ section#home {
 }
 
 .main-title {
-  height: 200px;
+  height: 100%;
   width: 700px;
 
-  margin-top: 24%;
   font-weight: bold;
   font-size: 50px;
-  //background: rgb(171, 43, 43);
-  border-bottom: 3px solid $color-cream;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
   p {
     letter-spacing: 4px;
   }
   p#first {
-    margin-right: 20%;
+    margin-right: 25%;
   }
 
   p#second {
-    margin-left: 20%;
+    margin-left: 25%;
   }
 }
 
 .discover {
   margin-bottom: 30px;
+  text-align: center;
+
+  i {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 700px) {
+  .main-title {
+    font-size: 30px;
+
+    p#first {
+      margin-right: 15%;
+    }
+
+    p#second {
+      margin-left: 15%;
+    }
+  }
 }
