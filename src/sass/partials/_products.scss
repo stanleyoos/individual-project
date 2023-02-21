@@ -1,4 +1,28 @@
-.products-wrapper {
+article:nth-child(2n) {
+  .product-text {
+    order: 1;
+  }
+}
+
+img {
+  width: 100px;
+}
+
+#products {
+  margin-top: 20px;
   background: $color-white;
   color: $color-black;
+
+  h2 {
+    text-align: center;
+    padding: 20px;
+    font-size: 36px;
+    color: $color-cream;
+    font-weight: 500;
+    letter-spacing: 15px;
+  }
+}
+
+.row {
+  align-self: center;
 }

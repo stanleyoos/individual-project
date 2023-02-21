@@ -4,33 +4,25 @@
       "id": 1,
       "title": "title 1",
       "description": "description one",
-      "image": "./images/coffee-1",
       "roasting": "4/10",
-      "inensity": "8/10"
+      "inensity": "8/10",
+      "image": "../images/coffee-1.png"
     },
     {
       "id": 2,
       "title": "title 2",
       "description": "description two",
-      "image": "../",
       "roasting": "5/10",
-      "inensity": "9/10"
+      "inensity": "9/10",
+      "image": "../images/coffee-2.png"
     },
     {
       "id": 3,
       "title": "title 3",
       "description": "description three",
-      "image": "../images",
       "roasting": "6/10",
-      "inensity": "10/10"
-    },
-    {
-      "id": 4,
-      "title": "title 4",
-      "description": "description four",
-      "image": "../images",
-      "roasting": "6/10",
-      "inensity": "10/10"
+      "inensity": "10/10",
+      "image": "../images/coffee-3.png"
     }
   ]
 }

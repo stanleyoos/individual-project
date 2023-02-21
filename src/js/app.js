@@ -60,7 +60,7 @@ const app = {
 
   initProducts: function () {
     for (let productData in this.products) {
-      new Product(this.products[productData].id, this.products[productData])
+      new Product(this.products[productData])
     }
   },
 
