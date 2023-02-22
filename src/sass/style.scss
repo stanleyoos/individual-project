@@ -1,12 +1,6 @@
 @import './partials/normalize.scss';
 
-// Bootstrap
-@import './bootstrap/functions.scss';
-@import './bootstrap/variables.scss';
-@import './bootstrap/utilities.scss';
-@import './bootstrap/mixins.scss';
-@import './bootstrap/grid.scss';
-
+@import './partials/variables.scss';
 @import './partials/settings.scss';
 @import './partials/global.scss';
 @import './partials/header.scss';

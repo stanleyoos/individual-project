@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,900;1,300;1,600&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;0,700;0,900;1,600&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
@@ -46,8 +46,10 @@
       </section>
       <section id="products">
         <div class="products-wrapper container">
-          <h2>PRODUCTS</h2>
-          <div id="product-list" class="container"></div>
+          <div class="title-wrapper">
+            <h2>PRODUCTS</h2>
+          </div>
+          <div id="product-list"></div>
         </div>
       </section>
       <section id="contact">
@@ -56,20 +58,20 @@
     </div>
     <script id="template-product" type="text/x-handlebars-template">
       <article class='product'>
-        <div class='row'>
-          <div class='product-text col-12 col-md-6'>
-            <h3>{{title}}</h3>
-            <div class='description'>
 
-              <p>{{description}}</p>
-            </div>
-            <p class='roasting'>Roasting: <span>{{roasting}}</span></p>
-            <p class='intensity'>Intensity: <span>{{intensity}}</span></p>
+        <div class='product-text'>
+          <h3>{{title}}</h3>
+          <div class='description'>
+            <div class='border'></div>
+            <p>{{description}}</p>
           </div>
-          <div class='product-img col-12 col-md-6'>
-            <img src='{{image}}' alt='picture' />
-          </div>
+          <p class='roasting'>ROASTING: <span>{{roasting}}</span></p>
+          <p class='intensity'>INTENSITY: <span>{{intensity}}</span></p>
         </div>
+        <div class='product-img'>
+          <img src='{{image}}' alt='picture' />
+        </div>
+
       </article>
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>

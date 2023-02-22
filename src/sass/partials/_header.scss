@@ -19,8 +19,9 @@
   letter-spacing: 5px;
 
   h1 {
-    font-size: 30px;
+    font-size: 50px;
     font-weight: bold;
+    margin: 0;
   }
   p {
     font-size: 14px;
@@ -28,24 +29,41 @@
   }
 }
 
-@media (max-width: 700px) {
-  .main-nav {
-    a {
-      font-size: 14px;
-      margin-right: 10px;
-    }
+@media (max-width: 768px) {
+  .header-wrapper {
+    display: block;
+    text-align: center;
+    height: 110px;
   }
-  .logo {
-    margin-left: 20px;
-    letter-spacing: 3px;
 
-    h1 {
-      font-size: 25px;
-      font-weight: bold;
-    }
-    p {
-      font-size: 12px;
-      letter-spacing: 1px;
-    }
+  .logo {
+    margin-left: 0;
   }
+
+  .main-nav {
+    margin: 20px 0;
+  }
+
+  .main-title {
+    height: 80%;
+  }
+  // .main-nav {
+  //   a {
+  //     font-size: 14px;
+  //     margin-right: 10px;
+  //   }
+  // }
+  // .logo {
+  //   margin-left: 20px;
+  //   letter-spacing: 3px;
+
+  //   h1 {
+  //     font-size: 25px;
+  //     font-weight: bold;
+  //   }
+  //   p {
+  //     font-size: 12px;
+  //     letter-spacing: 1px;
+  //   }
+  // }
 }
