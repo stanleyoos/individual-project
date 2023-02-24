@@ -102,5 +102,30 @@ section#products {
   box-shadow: 0px 0px 43px -6px rgba(153, 153, 153, 1);
 }
 
-@media (max-width) {
+@media (max-width: 768px) {
+  .border {
+    display: none;
+  }
+
+  .product-text h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 22px;
+  }
+
+  .description p {
+    font-size: 12px;
+  }
+
+  .roasting,
+  .intensity {
+    margin: 10px;
+    letter-spacing: 2px;
+    font-size: 12px;
+
+    span {
+      margin-left: 6px;
+      color: $color-cream;
+    }
+  }
 }

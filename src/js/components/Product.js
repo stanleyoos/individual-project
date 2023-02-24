@@ -12,7 +12,7 @@ class Product {
     const generatedHTML = templates.product(this.data)
 
     this.element = utils.createDOMFromHTML(generatedHTML)
-    console.log(this.element)
+    //console.log(this.element)
     const productsContainer = document.querySelector(
       select.containerOf.products
     )

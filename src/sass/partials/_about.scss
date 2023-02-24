@@ -1,0 +1,88 @@
+.contact-background {
+  position: relative;
+  background: url(../../images/about-us.jpg);
+  background-size: cover;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: '';
+    opacity: 0.7;
+    background-color: $color-black;
+  }
+
+  .contact-title {
+    letter-spacing: 5px;
+    color: $color-cream;
+    font-size: 32px;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    padding-top: 70px;
+    margin-bottom: 100px;
+
+    &::after {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      width: 40%;
+      transform: translate(-50%);
+      margin-top: 20px;
+      border-bottom: 4px solid $color-cream;
+    }
+  }
+
+  .contact-text {
+    width: 60%;
+    margin: 0 auto;
+
+    p {
+      z-index: 1;
+      padding-left: 10px;
+      padding-right: 10px;
+      margin-top: 40px;
+      position: relative;
+      font-size: 26px;
+      font-style: italic;
+      color: $color-white;
+    }
+
+    p:last-child {
+      width: 100%;
+      text-align: right;
+      padding-bottom: 140px;
+    }
+  }
+}
+
+// CONTACT FORM
+
+.contact-header {
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: $color-cream;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  input {
+    margin-bottom: 30px;
+    border-radius: 5px;
+  }
+
+  button {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: $color-cream;
+    color: $color-white;
+    border-radius: 3px;
+  }
+}
