@@ -20,6 +20,12 @@ export const classNames = {
   },
 }
 
+export const activatedSections = {
+  home: ['about', 'products'],
+  products: ['products'],
+  contact: ['contact'],
+}
+
 export const settings = {
   db: {
     url:

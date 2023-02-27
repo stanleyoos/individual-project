@@ -9,8 +9,10 @@
 .main-nav {
   a {
     text-decoration: none;
-    color: $color-gray;
+    color: $color-white;
     margin-right: 30px;
+
+    font-size: 24px;
   }
 }
 
@@ -47,23 +49,10 @@
   .main-title {
     height: 80%;
   }
-  // .main-nav {
-  //   a {
-  //     font-size: 14px;
-  //     margin-right: 10px;
-  //   }
-  // }
-  // .logo {
-  //   margin-left: 20px;
-  //   letter-spacing: 3px;
-
-  //   h1 {
-  //     font-size: 25px;
-  //     font-weight: bold;
-  //   }
-  //   p {
-  //     font-size: 12px;
-  //     letter-spacing: 1px;
-  //   }
-  // }
+  .main-nav {
+    a {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+  }
 }

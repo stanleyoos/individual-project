@@ -1,5 +1,5 @@
 import Product from './components/Product.js'
-import { classNames, select, settings } from './settings.js'
+import { classNames, select, settings, activatedSections } from './settings.js'
 
 const app = {
   initPages: function () {
@@ -40,7 +40,10 @@ const app = {
     const thisApp = this
 
     for (let page of thisApp.pages) {
-      page.classList.toggle(classNames.pages.active, page.id == pageId)
+      page.classList.toggle(
+        classNames.pages.active,
+        activatedSections[pageId].includes(page.id)
+      )
     }
   },
 

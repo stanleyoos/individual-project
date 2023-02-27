@@ -1,4 +1,4 @@
-.homepage-wrapper {
+.hero-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -6,12 +6,12 @@
   height: 800px;
 }
 
-section#home {
+#hero {
   background: url('../../images/background.png') no-repeat center center/cover;
   color: $color-cream;
 }
 
-.main-title {
+.hero-title {
   margin-top: 30px;
   height: 100%;
   width: 700px;
@@ -35,7 +35,7 @@ section#home {
   }
 }
 
-.discover {
+.hero-discover {
   margin-bottom: 30px;
   text-align: center;
 
@@ -45,7 +45,7 @@ section#home {
 }
 
 @media (max-width: 700px) {
-  .main-title {
+  .hero-title {
     font-size: 30px;
 
     p#first {
