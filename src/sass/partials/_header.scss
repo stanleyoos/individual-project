@@ -11,8 +11,7 @@
     text-decoration: none;
     color: $color-white;
     margin-right: 30px;
-
-    font-size: 24px;
+    font-size: $a-font-size;
   }
 }
 
@@ -20,10 +19,9 @@
   margin-left: 50px;
   letter-spacing: 5px;
 
-  h1 {
-    font-size: 50px;
+  p:nth-of-type(1) {
+    font-size: $h2-font-size;
     font-weight: bold;
-    margin: 0;
   }
   p {
     font-size: 14px;
@@ -31,28 +29,30 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: $medium) {
   .header-wrapper {
-    display: block;
     text-align: center;
-    height: 110px;
   }
 
+  .main-nav a {
+    font-size: $a-font-size * 0.8;
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: $small) {
+  .header-wrapper {
+    display: block;
+  }
   .logo {
     margin-left: 0;
   }
 
   .main-nav {
-    margin: 20px 0;
+    margin: 25px 0;
   }
 
-  .main-title {
-    height: 80%;
-  }
-  .main-nav {
-    a {
-      font-size: 18px;
-      margin-right: 10px;
-    }
+  .main-nav a {
+    margin-right: 10px;
   }
 }

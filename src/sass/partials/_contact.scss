@@ -2,12 +2,30 @@
   background-color: $color-white;
 }
 
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .contact-header {
   text-align: center;
-  margin-top: 40px;
-  margin-bottom: 20px;
+  width: 60%;
+  margin-top: 80px;
+  padding-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  text-align: center;
   color: $color-cream;
-  font-size: 24px;
+  font-size: $h3-font-size;
+  border-bottom: 3px solid $color-cream;
+  margin-bottom: 50px;
+}
+
+.contact-header::after {
+  content: '';
+  border-top: 3px solid $color-cream;
+  width: 200px;
 }
 
 form {
@@ -15,16 +33,34 @@ form {
   flex-direction: column;
   align-items: center;
   color: $color-black;
-  input {
+
+  input,
+  textarea {
+    border: 4px solid black;
+    width: 200px;
     margin-bottom: 30px;
     border-radius: 5px;
   }
 
   button {
-    margin-top: 20px;
+    width: 140px;
+    margin-top: 10px;
+    margin-bottom: 30px;
     padding: 10px;
     background-color: $color-cream;
     color: $color-white;
     border-radius: 3px;
+  }
+}
+
+@media (max-width: $medium) {
+  .contact-header {
+    font-size: $h3-font-size * 0.7;
+  }
+}
+
+@media (max-width: $small) {
+  .contact-header {
+    font-size: $h3-font-size * 0.5;
   }
 }

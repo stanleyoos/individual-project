@@ -10,7 +10,7 @@ article.product {
 }
 
 // every other article has switched order
-article:nth-child(2n) {
+article:nth-child(even) {
   .product-text {
     order: 1;
     padding-left: 40px;
@@ -61,16 +61,11 @@ section#products {
     font-size: 38px;
   }
 
-  p {
-    font-weight: 600;
-  }
-
   .description {
     display: flex;
     margin: 40px 0;
     p {
-      font-weight: 200;
-      flex: 2;
+      flex: 1;
       padding-right: 20px;
     }
 
@@ -102,7 +97,7 @@ section#products {
   box-shadow: 0px 0px 43px -6px rgba(153, 153, 153, 1);
 }
 
-@media (max-width: 768px) {
+@media (max-width: $medium) {
   .border {
     display: none;
   }
@@ -114,11 +109,11 @@ section#products {
   .product-text h3 {
     margin-top: 15px;
     margin-bottom: 10px;
-    font-size: 22px;
+    font-size: $h3-font-size * 0.8;
   }
 
   .description p {
-    font-size: 12px;
+    font-size: $p-font-size * 0.6;
   }
 
   .roasting,
@@ -131,5 +126,20 @@ section#products {
       margin-left: 6px;
       color: $color-cream;
     }
+  }
+}
+
+@media (max-width: $small) {
+  .product-text h3 {
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-size: $h3-font-size * 0.5;
+  }
+
+  .roasting,
+  .intensity {
+    margin: 2px;
+    letter-spacing: 2px;
+    font-size: 12px;
   }
 }

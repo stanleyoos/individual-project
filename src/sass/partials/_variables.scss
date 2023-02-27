@@ -1,5 +1,9 @@
 $font-family: 'Source Sans Pro', sans-serif;
-$font-size: 14px;
+$p-font-size: 20px;
+$h1-font-size: 60px;
+$h2-font-size: 50px;
+$h3-font-size: 40px;
+$a-font-size: 24px;
 
 // COLORS
 $color-cream: #bea67c;
@@ -12,3 +16,9 @@ $font-regular: 400;
 $font-bold: 700;
 $font-black: 900;
 $font-semibold: 600;
+
+// BREAKPOINTS
+
+$large: 992px;
+$medium: 768px;
+$small: 576px;
